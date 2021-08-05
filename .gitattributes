@@ -1,0 +1,3 @@
+*.dll linguist-language=C#
+*.pdb linguist-language=WPF
+*.conf linguist-language=xaml
