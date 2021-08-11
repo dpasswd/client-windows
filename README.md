@@ -14,13 +14,46 @@
 
 ## 首次使用
 
-* [启动密码](https://github.com/dpasswd/client-windows/wiki/%E9%A6%96%E6%AC%A1%E4%BD%BF%E7%94%A8#%E5%90%AF%E5%8A%A8%E5%AF%86%E7%A0%81)
-* [中心端登录](https://github.com/dpasswd/client-windows/wiki/%E9%A6%96%E6%AC%A1%E4%BD%BF%E7%94%A8#%E4%B8%AD%E5%BF%83%E7%AB%AF%E7%99%BB%E5%BD%95)
-* [备份管理](https://github.com/dpasswd/client-windows/wiki/%E9%A6%96%E6%AC%A1%E4%BD%BF%E7%94%A8#%E5%A4%87%E4%BB%BD%E7%AE%A1%E7%90%86)
-* [公私钥配置](https://github.com/dpasswd/client-windows/wiki/%E9%A6%96%E6%AC%A1%E4%BD%BF%E7%94%A8#%E5%85%AC%E7%A7%81%E9%92%A5%E9%85%8D%E7%BD%AE)
+### 启动密码
+
+首次使用时需要填写启动密码，该密码类似于windows锁屏密码，仅存储在本地不会被保存在云端。
+
+![](https://dpasswd.com/wiki/start-1.png)
+
+### 中心端登录
+
+填写 [Center-Server](https://github.com/dpasswd/Center-Server)项目的请求地址与系统的账号密码进行登录。
+
+![](https://dpasswd.com/wiki/start-2.png)
+
+### 备份管理
+
+登录中心端后，开启备份管理即可把本地备份传到云端。
+
+![](https://dpasswd.com/wiki/start-3.png)
+
+### 公私钥配置
+
+配置完毕后即可对密码进行加密分享。
+
+![](https://dpasswd.com/wiki/start-4-2.png)
 
 ## 密码管理
 
-* [导入密码(支持第三方密码工具)](https://github.com/dpasswd/client-windows/wiki/%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86#%E5%AF%BC%E5%85%A5%E5%AF%86%E7%A0%81%E6%94%AF%E6%8C%81%E7%AC%AC%E4%B8%89%E6%96%B9%E5%AF%86%E7%A0%81%E5%B7%A5%E5%85%B7)
-* [分享密码](https://github.com/dpasswd/client-windows/wiki/%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86#%E5%88%86%E4%BA%AB%E5%AF%86%E7%A0%81)
-* [导入分享](https://github.com/dpasswd/client-windows/wiki/%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86#%E5%AF%BC%E5%85%A5%E5%88%86%E4%BA%AB)
+### 导入密码(支持第三方密码工具)
+
+右键空白处，可以选择通过自定义excel模板或者keypass、Bitwarden的csv文件进行导入。
+
+![](https://dpasswd.com/wiki/manager-1.png)
+
+### 分享密码
+
+右键你需要分享的密码，点击分享后选择用户(如果选择的用户未配置公私钥则无法分享，请参考[公私钥配置](https://github.com/dpasswd/client-windows/wiki/%E9%A6%96%E6%AC%A1%E4%BD%BF%E7%94%A8#%E5%85%AC%E7%A7%81%E9%92%A5%E9%85%8D%E7%BD%AE))
+
+![](https://dpasswd.com/wiki/manager-2-2.png)
+
+### 导入分享
+
+导入分享有2种方式，1:在分享的web地址中点击保存到客户端进行导入。2:复制加密后的密文在客户端左侧空白处右键-导入分享功能。
+
+![](https://dpasswd.com/wiki/manager-3.png)
